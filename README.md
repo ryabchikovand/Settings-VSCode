@@ -16,9 +16,9 @@ eval "$(starship init zsh)"
 ```
 
 ## Pluguins
-Тема VS Code: https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula
-Иконки VS Code: https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme
-Go: https://marketplace.visualstudio.com/items?itemName=golang.Go
+Тема VS Code: https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula  
+Иконки VS Code: https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme  
+Go: https://marketplace.visualstudio.com/items?itemName=golang.Go  
 
 ## Shortcuts
 ### Editor
