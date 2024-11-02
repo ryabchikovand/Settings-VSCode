@@ -5,7 +5,7 @@
 * Шрифты JetBrains Mono Nerd: https://www.nerdfonts.com/
 
 ## Terminal
-Oh My Zsh: https://ohmyz.sh/
+Oh My Zsh: https://ohmyz.sh/  
 Starship: https://starship.rs/
 ### ~/.zshrc
 ```
