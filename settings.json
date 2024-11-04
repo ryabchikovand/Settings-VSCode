@@ -22,5 +22,6 @@
     "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
     "terminal.integrated.lineHeight": 0,
     "terminal.integrated.fontSize": 12,
-    "terminal.integrated.cursorBlinking": true
+    "terminal.integrated.cursorBlinking": true,
+    "cSpell.language": "en,en-US"
 }

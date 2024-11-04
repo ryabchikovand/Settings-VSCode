@@ -19,6 +19,7 @@ eval "$(starship init zsh)"
 Тема VS Code: https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula  
 Иконки VS Code: https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme  
 Go: https://marketplace.visualstudio.com/items?itemName=golang.Go  
+Code Spell Checker: https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
 
 ## Shortcuts
 ### Editor
