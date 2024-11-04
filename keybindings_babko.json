@@ -219,6 +219,8 @@
   },
   // Увелививаем терминал на весь экран
   // Убрать или вернуть Explorer - cmd+b
+  // Свернуть терминал cmd+j
+  // Развернуть терминал cmd+t
   {
       "key": "cmd+t",
       "command": "workbench.action.toggleMaximizedPanel"
