@@ -1,438 +1,438 @@
 [
-  {
-      "key": "cmd+o cmd+p",
-      "command": "workbench.action.showCommands"
-  },
-  {
-      "key": "cmd+enter",
-      "command": "explorer.openAndPassFocus",
-      "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
-  },
-  // Open Settings
-  {
-      "key": "alt+cmd+,",
-      "command": "workbench.action.openSettings"
-  },
-  // Reset Zoom to default
-  {
-      "key": "cmd+0",
-      "command": "workbench.action.zoomReset"
-  },
-  {
-      "key": "escape",
-      "command": "notifications.hideToasts",
-      "when": "notificationToastsVisible"
-  },
-  // Переместиться на строку по номеру
-  {
-      "key": "cmd+g",
-      "command": "workbench.action.gotoLine"
-  },
-  // Переместиься к функции
-  {
-      "key": "cmd+r",
-      "command": "workbench.action.gotoSymbol"
-  },
-  // Переместиься к функции по всему
-  {
-      "key": "cmd+shift+r",
-      "command": "workbench.action.showAllSymbols"
-  },
-  {
-      "key": "ctrl+1",
-      "command": "workbench.action.openEditorAtIndex1",
-      "when": "!terminalFocus"
-  },
-  {
-      "key": "ctrl+2",
-      "command": "workbench.action.openEditorAtIndex2",
-      "when": "!terminalFocus"
-  },
-  {
-      "key": "ctrl+3",
-      "command": "workbench.action.openEditorAtIndex3",
-      "when": "!terminalFocus"
-  },
-  {
-      "key": "ctrl+4",
-      "command": "workbench.action.openEditorAtIndex4",
-      "when": "!terminalFocus"
-  },
-  {
-      "key": "ctrl+5",
-      "command": "workbench.action.openEditorAtIndex5",
-      "when": "!terminalFocus"
-  },
-  {
-      "key": "ctrl+6",
-      "command": "workbench.action.openEditorAtIndex6",
-      "when": "!terminalFocus"
-  },
-  {
-      "key": "ctrl+7",
-      "command": "workbench.action.openEditorAtIndex7",
-      "when": "!terminalFocus"
-  },
-  {
-      "key": "ctrl+8",
-      "command": "workbench.action.openEditorAtIndex8",
-      "when": "!terminalFocus"
-  },
-  {
-      "key": "ctrl+9",
-      "command": "workbench.action.openEditorAtIndex9",
-      "when": "!terminalFocus"
-  },
-  {
-      "key": "cmd+h",
-      "command": "workbench.action.focusSideBar",
-      "when": "editorTextFocus || terminalFocus"
-  },
-  {
-      "key": "cmd+h",
-      "command": "workbench.view.search.focus",
-      "when": "activeViewlet == 'workbench.view.search' && !inputFocus"
-  },
-  {
-      "key": "cmd+h",
-      "command": "workbench.action.focusActiveEditorGroup",
-      "when": "editorIsOpen && !editorTextFocus && !view.terminal.visible"
-  },
-  {
-      "key": "cmd+l",
-      "command": "search.focus.nextInputBox",
-      "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
-  },
-  {
-      "key": "cmd+k",
-      "command": "search.focus.previousInputBox",
-      "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible && !searchInputBoxFocus"
-  },
-  {
-      "key": "alt+cmd+;",
-      "command": "search.action.collapseSearchResults"
-  },
-  {
-      "key": "alt+cmd+'",
-      "command": "search.action.expandSearchResults"
-  },
-  {
-      "key": "alt+cmd+0",
-      "command": "search.action.focusSearchList"
-  },
-  // Открывает контекстное меню
-  {
-      "key": "alt+enter",
-      "command": "editor.action.showContextMenu",
-      "when": "editorTextFocus"
-  },
-  // Копирует строку и вставляет ее ниже
-  {
-      "key": "cmd+j",
-      "command": "editor.action.copyLinesDownAction",
-      "when": "editorTextFocus && !editorReadonly"
-  },
-  // Форматирует текст, например добаляет отступы
-  {
-      "key": "alt+cmd+k",
-      "command": "editor.action.formatDocument",
-      "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
-  },
-  // Врапперы для emmet
-  // {
-  //     "key": "cmd+m cmd+w",
-  //     "command": "editor.emmet.action.wrapWithAbbreviation",
-  //     "when": "editorTextFocus"
-  // },
-  // {
-  //     "key": "cmd+m cmd+r",
-  //     "command": "editor.emmet.action.updateTag",
-  //     "when": "editorTextFocus"
-  // },
-  // {
-  //     "key": "cmd+m cmd+backspace",
-  //     "command": "editor.emmet.action.removeTag",
-  //     "when": "editorTextFocus"
-  // },
-  // {
-  //     "key": "cmd+m cmd+m",
-  //     "command": "editor.emmet.action.matchTag",
-  //     "when": "editorTextFocus"
-  // },
-  // Сворачиваем или разворачиваем код
-  {
-      "key": "cmd+[",
-      "command": "editor.fold",
-      "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-      "key": "cmd+]",
-      "command": "editor.unfold",
-      "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-      "key": "alt+cmd+[",
-      "command": "editor.foldAll",
-      "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-      "key": "alt+cmd+]",
-      "command": "editor.unfoldAll",
-      "when": "editorTextFocus && foldingEnabled"
-  },
-  // Сворачиваем или разворачиваем код РЕКУРСИВНО
-  {
-      "key": "ctrl+alt+cmd+[",
-      "command": "editor.foldRecursively",
-      "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-      "key": "ctrl+alt+cmd+]",
-      "command": "editor.unfoldRecursively",
-      "when": "editorTextFocus && foldingEnabled"
-  },
-  // Свернуть или развернуть папки в Explorer для открытого файла
-  {
-      "key": "cmd+\\",
-      "command": "workbench.files.action.collapseExplorerFolders"
-  },
-  {
-      "key": "alt+\\",
-      "command": "workbench.files.action.showActiveFileInExplorer"
-  },
-  // Создание файла в Explorer
-  {
-      "key": "cmd+n",
-      "command": "explorer.newFile",
-      "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
-  },
-  // Создание файла в Explorer
-  {
-      "key": "shift+cmd+n",
-      "command": "explorer.newFolder",
-      "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
-  },
-  {
-      "key": "cmd+e",
-      "command": "workbench.view.explorer",
-      "when": "viewContainer.workbench.view.explorer.enabled"
-  },
-  // Увелививаем терминал на весь экран
-  // Убрать или вернуть Explorer - cmd+b
-  // Свернуть терминал cmd+j
-  // Развернуть терминал cmd+t
-  {
-      "key": "cmd+t",
-      "command": "workbench.action.toggleMaximizedPanel"
-  },
-  // Фокусируемся на терминал - control+` или cmd+e
-  {
-      "key": "Escape",
-      "command": "workbench.action.terminal.toggleTerminal",
-      "when": "terminalFocus"
-  },
-  // Создаем новый терминал
-  {
-      "key": "cmd+n",
-      "command": "workbench.action.terminal.new",
-      "when": "terminalFocus"
-  },
-  // Закрываем терминал
-  {
-      "key": "ctrl+w",
-      "command": "workbench.action.terminal.kill",
-      "when": "terminalFocus"
-  },
-  // Ходим по терминалу вниз
-  {
-      "key": "cmd+l",
-      "command": "workbench.action.terminal.focusNext",
-      "when": "terminalFocus"
-  },
-  // Ходим по терминалу вверх
-  {
-      "key": "cmd+k",
-      "command": "workbench.action.terminal.focusPrevious",
-      "when": "terminalFocus"
-  },
-  // Чистим терминал
-  {
-      "key": "alt+k",
-      "command": "workbench.action.terminal.clear",
-      "when": "terminalFocus"
-  },
-  // Создается терминал справа 
-  {
-      "key": "ctrl+n",
-      "command": "workbench.action.terminal.split",
-      "when": "terminalFocus"
-  },
-  {
-      "key": "cmd+h",
-      "command": "workbench.action.terminal.focus",
-      "when": "view.terminal.visible && !terminalFocus"
-  },
-  // Переходить между сплитами терминалов 
-  {
-      "key": "ctrl+;",
-      "command": "workbench.action.terminal.focusNextPane",
-      "when": "terminalFocus"
-  },
-  {
-      "key": "ctrl+1",
-      "command": "workbench.action.terminal.focusAtIndex1",
-      "when": "terminalFocus"
-  },
-  {
-      "key": "ctrl+2",
-      "command": "workbench.action.terminal.focusAtIndex2",
-      "when": "terminalFocus"
-  },
-  {
-      "key": "ctrl+3",
-      "command": "workbench.action.terminal.focusAtIndex3",
-      "when": "terminalFocus"
-  },
-  {
-      "key": "ctrl+4",
-      "command": "workbench.action.terminal.focusAtIndex4",
-      "when": "terminalFocus"
-  },
-  {
-      "key": "ctrl+5",
-      "command": "workbench.action.terminal.focusAtIndex5",
-      "when": "terminalFocus"
-  },
-  {
-      "key": "ctrl+6",
-      "command": "workbench.action.terminal.focusAtIndex6",
-      "when": "terminalFocus"
-  },
-  {
-      "key": "ctrl+7",
-      "command": "workbench.action.terminal.focusAtIndex7",
-      "when": "terminalFocus"
-  },
-  {
-      "key": "ctrl+8",
-      "command": "workbench.action.terminal.focusAtIndex8",
-      "when": "terminalFocus"
-  },
-  {
-      "key": "ctrl+9",
-      "command": "workbench.action.terminal.focusAtIndex9",
-      "when": "terminalFocus"
-  },
-  {
-      "key": "cmd+l",
-      "command": "workbench.action.nextEditor",
-      "when": "!terminalFocus && !listFocus && !suggestWidgetVisible && !inQuickOpen && !inputBoxFocus"
-  },
-  {
-      "key": "cmd+k",
-      "command": "workbench.action.previousEditor",
-      "when": "!terminalFocus && !listFocus && !suggestWidgetVisible && !inQuickOpen && !inputBoxFocus"
-  },
-  {
-      "key": "alt+tab",
-      "command": "workbench.action.quickSwitchWindow"
-  },
-  {
-      "key": "cmd+l",
-      "command": "workbench.action.quickOpenSelectNext",
-      "when": "inQuickOpen"
-  },
-  {
-      "key": "cmd+k",
-      "command": "workbench.action.quickOpenSelectPrevious",
-      "when": "inQuickOpen"
-  },
-  {
-      "key": "cmd+l",
-      "command": "selectNextSuggestion",
-      "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
-      "key": "cmd+k",
-      "command": "selectPrevSuggestion",
-      "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  // Перемещаемся к cледующей позиции курсора (между разными файлами)
-  {
-      "key": "cmd+.",
-      "command": "workbench.action.navigateForward",
-      "when": "canNavigateForward"
-  },
-  // Перемещаемся к предыдущей позиции курсора (между разными файлами)
-  {
-      "key": "cmd+,",
-      "command": "workbench.action.navigateBack",
-      "when": "canNavigateBack"
-  },
-  {
-      "key": "l",
-      "command": "list.focusDown",
-      "when": "listFocus && !inputFocus"
-  },
-  {
-      "key": "k",
-      "command": "list.focusUp",
-      "when": "listFocus && !inputFocus"
-  },
-  // Создаем новую панель в Editor (Справа)
-  {
-      "key": "ctrl+n",
-      "command": "workbench.action.splitEditor",
-      "when": "!terminalFocus"
-  },
-  // Создаем новую панель в Editor (Внизу)
-  {
-      "key": "ctrl+alt+n",
-      "command": "workbench.action.splitEditorDown"
-  },
-  // Закрываем сразу все открытые панели 
-  {
-      "key": "shift+cmd+w",
-      "command": "workbench.action.closeAllEditors"
-  },
-  {
-      "key": "alt+w",
-      "command": "workbench.action.closeGroup"
-  },
-  // Увеличиваем конкретную панель
-  {
-      "key": "ctrl+=",
-      "command": "workbench.action.increaseViewSize",
-      "when": "editorFocus"
-  },
-  // Уменьшаем конкретную панель
-  {
-      "key": "ctrl+-",
-      "command": "workbench.action.decreaseViewSize",
-      "when": "editorFocus"
-  },
-  // Перемещаемся по панеле вверх 
-  {
-      "key": "ctrl+k",
-      "command": "workbench.action.navigateUp",
-      "when": "editorFocus"
-  },
-  // Перемещаемся по панеле вправа
-  {
-      "key": "ctrl+;",
-      "command": "workbench.action.navigateRight",
-      "when": "editorFocus"
-  },
-  // Перемещаемся по панеле вниз
-  {
-      "key": "ctrl+l",
-      "command": "workbench.action.navigateDown",
-      "when": "editorFocus"
-  },
-  // Перемещаемся по панеле влево 
-  {
-      "key": "ctrl+j",
-      "command": "workbench.action.navigateLeft",
-      "when": "editorFocus"
-  }
+    {
+        "key": "cmd+o cmd+p",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "explorer.openAndPassFocus",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    // Open Settings
+    {
+        "key": "alt+cmd+,",
+        "command": "workbench.action.openSettings"
+    },
+    // Reset Zoom to default
+    {
+        "key": "cmd+0",
+        "command": "workbench.action.zoomReset"
+    },
+    {
+        "key": "escape",
+        "command": "notifications.hideToasts",
+        "when": "notificationToastsVisible"
+    },
+    // Переместиться на строку по номеру
+    {
+        "key": "cmd+g",
+        "command": "workbench.action.gotoLine"
+    },
+    // Переместиься к функции
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.gotoSymbol"
+    },
+    // Переместиься к функции по всему
+    {
+        "key": "cmd+shift+r",
+        "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "workbench.action.openEditorAtIndex1",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "workbench.action.openEditorAtIndex2",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "workbench.action.openEditorAtIndex3",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+4",
+        "command": "workbench.action.openEditorAtIndex4",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+5",
+        "command": "workbench.action.openEditorAtIndex5",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+6",
+        "command": "workbench.action.openEditorAtIndex6",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+7",
+        "command": "workbench.action.openEditorAtIndex7",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+8",
+        "command": "workbench.action.openEditorAtIndex8",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+9",
+        "command": "workbench.action.openEditorAtIndex9",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "cmd+h",
+        "command": "workbench.action.focusSideBar",
+        "when": "editorTextFocus || terminalFocus"
+    },
+    {
+        "key": "cmd+h",
+        "command": "workbench.view.search.focus",
+        "when": "activeViewlet == 'workbench.view.search' && !inputFocus"
+    },
+    {
+        "key": "cmd+h",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "editorIsOpen && !editorTextFocus && !view.terminal.visible"
+    },
+    {
+        "key": "cmd+l",
+        "command": "search.focus.nextInputBox",
+        "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
+    },
+    {
+        "key": "cmd+k",
+        "command": "search.focus.previousInputBox",
+        "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible && !searchInputBoxFocus"
+    },
+    {
+        "key": "alt+cmd+;",
+        "command": "search.action.collapseSearchResults"
+    },
+    {
+        "key": "alt+cmd+'",
+        "command": "search.action.expandSearchResults"
+    },
+    {
+        "key": "alt+cmd+0",
+        "command": "search.action.focusSearchList"
+    },
+    // Открывает контекстное меню
+    {
+        "key": "alt+enter",
+        "command": "editor.action.showContextMenu",
+        "when": "editorTextFocus"
+    },
+    // Копирует строку и вставляет ее ниже
+    {
+        "key": "cmd+j",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    // Форматирует текст, например добаляет отступы
+    {
+        "key": "alt+cmd+k",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    // Врапперы для emmet
+    // {
+    //     "key": "cmd+m cmd+w",
+    //     "command": "editor.emmet.action.wrapWithAbbreviation",
+    //     "when": "editorTextFocus"
+    // },
+    // {
+    //     "key": "cmd+m cmd+r",
+    //     "command": "editor.emmet.action.updateTag",
+    //     "when": "editorTextFocus"
+    // },
+    // {
+    //     "key": "cmd+m cmd+backspace",
+    //     "command": "editor.emmet.action.removeTag",
+    //     "when": "editorTextFocus"
+    // },
+    // {
+    //     "key": "cmd+m cmd+m",
+    //     "command": "editor.emmet.action.matchTag",
+    //     "when": "editorTextFocus"
+    // },
+    // Сворачиваем или разворачиваем код
+    {
+        "key": "cmd+[",
+        "command": "editor.fold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "cmd+]",
+        "command": "editor.unfold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "alt+cmd+[",
+        "command": "editor.foldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "alt+cmd+]",
+        "command": "editor.unfoldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    // Сворачиваем или разворачиваем код РЕКУРСИВНО
+    {
+        "key": "ctrl+alt+cmd+[",
+        "command": "editor.foldRecursively",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "ctrl+alt+cmd+]",
+        "command": "editor.unfoldRecursively",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    // Свернуть или развернуть папки в Explorer для открытого файла
+    {
+        "key": "cmd+\\",
+        "command": "workbench.files.action.collapseExplorerFolders"
+    },
+    {
+        "key": "alt+\\",
+        "command": "workbench.files.action.showActiveFileInExplorer"
+    },
+    // Создание файла в Explorer
+    {
+        "key": "cmd+n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    // Создание файла в Explorer
+    {
+        "key": "shift+cmd+n",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "cmd+e",
+        "command": "workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    // Увелививаем терминал на весь экран
+    // Убрать или вернуть Explorer - cmd+b
+    // Свернуть терминал cmd+j
+    // Развернуть терминал cmd+t
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    // Фокусируемся на терминал - control+` или cmd+e
+    // {
+    //     "key": "Escape",
+    //     "command": "workbench.action.terminal.toggleTerminal",
+    //     "when": "terminalFocus"
+    // },
+    // Создаем новый терминал
+    {
+        "key": "cmd+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+    // Закрываем терминал
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    // Ходим по терминалу вниз
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    // Ходим по терминалу вверх
+    {
+        "key": "cmd+k",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    // Чистим терминал
+    {
+        "key": "alt+k",
+        "command": "workbench.action.terminal.clear",
+        "when": "terminalFocus"
+    },
+    // Создается терминал справа 
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+h",
+        "command": "workbench.action.terminal.focus",
+        "when": "view.terminal.visible && !terminalFocus"
+    },
+    // Переходить между сплитами терминалов 
+    {
+        "key": "ctrl+;",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "workbench.action.terminal.focusAtIndex1",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "workbench.action.terminal.focusAtIndex2",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "workbench.action.terminal.focusAtIndex3",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+4",
+        "command": "workbench.action.terminal.focusAtIndex4",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+5",
+        "command": "workbench.action.terminal.focusAtIndex5",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+6",
+        "command": "workbench.action.terminal.focusAtIndex6",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+7",
+        "command": "workbench.action.terminal.focusAtIndex7",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+8",
+        "command": "workbench.action.terminal.focusAtIndex8",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+9",
+        "command": "workbench.action.terminal.focusAtIndex9",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.nextEditor",
+        "when": "!terminalFocus && !listFocus && !suggestWidgetVisible && !inQuickOpen && !inputBoxFocus"
+    },
+    {
+        "key": "cmd+k",
+        "command": "workbench.action.previousEditor",
+        "when": "!terminalFocus && !listFocus && !suggestWidgetVisible && !inQuickOpen && !inputBoxFocus"
+    },
+    {
+        "key": "alt+tab",
+        "command": "workbench.action.quickSwitchWindow"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "cmd+k",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "cmd+l",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "cmd+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    // Перемещаемся к cледующей позиции курсора (между разными файлами)
+    {
+        "key": "cmd+.",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    // Перемещаемся к предыдущей позиции курсора (между разными файлами)
+    {
+        "key": "cmd+,",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "l",
+        "command": "list.focusDown",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "k",
+        "command": "list.focusUp",
+        "when": "listFocus && !inputFocus"
+    },
+    // Создаем новую панель в Editor (Справа)
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.splitEditor",
+        "when": "!terminalFocus"
+    },
+    // Создаем новую панель в Editor (Внизу)
+    {
+        "key": "ctrl+alt+n",
+        "command": "workbench.action.splitEditorDown"
+    },
+    // Закрываем сразу все открытые панели 
+    {
+        "key": "shift+cmd+w",
+        "command": "workbench.action.closeAllEditors"
+    },
+    {
+        "key": "alt+w",
+        "command": "workbench.action.closeGroup"
+    },
+    // Увеличиваем конкретную панель
+    {
+        "key": "ctrl+=",
+        "command": "workbench.action.increaseViewSize",
+        "when": "editorFocus"
+    },
+    // Уменьшаем конкретную панель
+    {
+        "key": "ctrl+-",
+        "command": "workbench.action.decreaseViewSize",
+        "when": "editorFocus"
+    },
+    // Перемещаемся по панеле вверх 
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp",
+        "when": "editorFocus"
+    },
+    // Перемещаемся по панеле вправа
+    {
+        "key": "ctrl+;",
+        "command": "workbench.action.navigateRight",
+        "when": "editorFocus"
+    },
+    // Перемещаемся по панеле вниз
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateDown",
+        "when": "editorFocus"
+    },
+    // Перемещаемся по панеле влево 
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateLeft",
+        "when": "editorFocus"
+    }
 ]
